@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f8f5;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #2E8B57;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4ffd4;
+        }
+
+        
+        .hero {
+            min-height: 500px;
+            background: linear-gradient(
+                rgba(0, 80, 40, 0.65),
+                rgba(0, 80, 40, 0.65)
+            ),
+            url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            line-height: 1.6;
+        }
+
+        
+        
+
+        
+        .welcome {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .welcome h2 {
+            color: #2E8B57;
+            font-size: 35px;
+        }
+
+        .welcome p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 8%;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background:color white;
+            width: 280px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-icon {
+            font-size: 45px;
+        }
+
+        .feature-card h3 {
+            color:black;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        
+        .categories {
+            background-color: #eaf5ed;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            color: #2E8B57;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            background-color: white;
+            width: 220px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .category span {
+            font-size: 50px;
+        }
+
+        .category h3 {
+            color: #333;
+        }
+
+        
+        .cta {
+            background-color: #2E8B57;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #2E8B57;
+            padding: 14px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #eee;
+        }
+
+    
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+            color: #ccc;
+        }
+
+    
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo"> FreshMart</div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">Cart 🛒</a>
+        </nav>
+    </header>
+
+
+    
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to FreshMart!</h1>
+
+            <p>
+                Your trusted online store for fresh meat, vegetables and fruits.
+                At FreshMart, we make shopping simple and convenient.
+            Browse our wide selection of quality products, add your
+            favourites to your cart and enjoy a convenient shopping
+            experience from the comfort of your home.
+            </p>
+
+
+            <p>
+                Fresh products. Great prices. Delivered with care.
+            </p>
+
+    
+            
+            
+
+        </div>
+
+    </section>
+
+
+    
+
+
+
+
+    
+    <section class="categories">
+
+        <h2>Shop Our Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <span>🥩</span>
+                <h3>Meat</h3>
+                <p>Fresh quality meat</p>
+            </div>
+
+            <div class="category">
+                <span>🥕</span>
+                <h3>Vegetables</h3>
+                <p>Healthy fresh vegetables</p>
+            </div>
+
+            <div class="category">
+                <span>🍎</span>
+                <h3>Fruits</h3>
+                <p>Fresh and delicious fruits</p>
+            </div>
+
+             <div class="category">
+                <span>🚚</span>
+                <h3>Cart</h3>
+                <p>Easy delivery to your doorstep</p>
+            
+            
+            
+            
+        </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="cta">
+
+        <h2>Ready to Shop?</h2>
+
+        <p>
+            Discover fresh products at prices you'll love.
+        </p>
+        <a href="home.html" class="cta-button">Home</a>
+
+        <a href="product.html" class="cta-button">
+            View Our Products
+        </a>
+        <a href="cart.html" class="cta-button">View Cart 🛒</a>
+        
+
+    </section>
+
+
+    
+    <footer>
+
+        <p>© 2026 FreshMart Online Store</p>
+        <p>Fresh products • Affordable prices • Easy shopping</p>
+
+    </footer>
+
+</body>
+</html>
