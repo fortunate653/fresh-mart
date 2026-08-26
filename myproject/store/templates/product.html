@@ -1,235 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>FreshMart - Products</title>
+{% extends "base.html" %}
+{% load static %}
 
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f0f8f0;
-        }
-
-        header {
-            background-color: #2E8B57;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        h2 {
-            text-align: center;
-            color: #2E8B57;
-            margin-bottom: 30px;
-        }
-
-        .products {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .product {
-            width: 250px;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-            text-align: center;
-        }
-
-        .product:hover {
-            transform: scale(1.05);
-        }
-
-        .product img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .product h3 {
-            color: #2E8B57;
-            margin: 15px 0 10px;
-        }
-
-        .price {
-            color: red;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .description {
-            padding: 10px 15px;
-            color: #555;
-        }
-
-        .buttons {
-            text-align: center;
-            margin: 40px;
-        }
-
-        button {
-            background-color: #2E8B57;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #1f6b43;
-        }
-
-        .back {
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #2E8B57;
-            font-weight: bold;
-        }
-
-        .back:hover {
-            color: #1f6b43;
-        }
-        
-nav {
-    text-align: center;
-    margin: 40px 0 20px;
-}
-
-nav a {
-    display: inline-block;
-    background-color: #2E8B57;
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    margin: 0 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-    background-color: #1f6b43;
-    transform: translateY(-2px);
-}
-    </style>
-
-</head>
-<body>
-
-<header>
-    <h1>FreshMart online store</h1>
-</header>
-{%extends "base.html"%}
-{%load static%}
-{%block content%}
+{% block content %}
 
 <div class="container">
 
     <h2>Our Fresh Products</h2>
+
     <div class="products">
+
         <div class="product">
-<img src="images copy/image1.jpg" alt="fresh full chicken">
-<h3>Fresh Full Chicken</h3>
-<p class="price">$7.00</p>
-<p class="description">Premium quality fresh full chicken.</p>
-</div>
+            <img src="{% static 'images/image1.jpg' %}" alt="Fresh Full Chicken">
+            <h3>Fresh Full Chicken</h3>
+            <p class="price">$7.00</p>
+            <p class="description">
+                Premium quality fresh full chicken.
+            </p>
+        </div>
+
+
         <div class="product">
-            <img src="images copy/image2.jpg" alt="Fresh Beef">
+            <img src="{% static 'images/image2.jpg' %}" alt="Fresh Beef">
             <h3>Fresh Beef</h3>
             <p class="price">$4.00/kg</p>
-            <p class="description">Premium quality fresh beef cuts.</p>
+            <p class="description">
+                Premium quality fresh beef cuts.
+            </p>
         </div>
 
+
         <div class="product">
-            <img src="images copy/image3.jpg" alt="Fresh Fish">
+            <img src="{% static 'images/image3.jpg' %}" alt="Fresh Fish">
             <h3>Fresh Fish</h3>
             <p class="price">$3.00/kg</p>
-            <p class="description">Fresh fish.</p>
+            <p class="description">
+                Fresh fish.
+            </p>
         </div>
 
+
         <div class="product">
-            <img src="images copy/image4.jpg" alt="Fresh Vegetables">
+            <img src="{% static 'images/image4.jpg' %}" alt="Fresh Vegetables">
             <h3>Fresh Vegetables</h3>
             <p class="price">$1.80/kg</p>
-            <p class="description">Fresh vegetables.</p>
+            <p class="description">
+                Fresh vegetables.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image5.jpg" alt="Fresh pork">
+            <img src="{% static 'images/image5.jpg' %}" alt="Fresh Pork">
             <h3>Fresh Pork</h3>
             <p class="price">$4.50/kg</p>
-            <p class="description">Fresh pork cuts.</p>
-
+            <p class="description">
+                Fresh pork cuts.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image6.jpg" alt="fresh cabbage">
+            <img src="{% static 'images/image6.jpg' %}" alt="Fresh Cabbage">
             <h3>Fresh Cabbage</h3>
             <p class="price">$1.50</p>
-            <p class="description">Fresh cabbage.</p>
-
+            <p class="description">
+                Fresh cabbage.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image7.jpg" alt="fresh potatoes">
+            <img src="{% static 'images/image7.jpg' %}" alt="Fresh Potatoes">
             <h3>Fresh Potatoes</h3>
             <p class="price">$1.20/kg</p>
-            <p class="description">Fresh potatoes.</p>
-
+            <p class="description">
+                Fresh potatoes.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image8.jpg" alt="fresh minced meat">
+            <img src="{% static 'images/image8.jpg' %}" alt="Fresh Minced Meat">
             <h3>Fresh Minced Meat</h3>
             <p class="price">$2.00/kg</p>
-            <p class="description">Fresh minced meat.</p>
-
+            <p class="description">
+                Fresh minced meat.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image9.jpg" alt="fresh sausages">
+            <img src="{% static 'images/image9.jpg' %}" alt="Fresh Sausages">
             <h3>Fresh Sausages</h3>
             <p class="price">$2.00/kg</p>
-            <p class="description">Fresh sausages.</p>
-
+            <p class="description">
+                Fresh sausages.
+            </p>
         </div>
+
+
         <div class="product">
-            <img src="images copy/image10.jpg" alt="fresh okra">
+            <img src="{% static 'images/image10.jpg' %}" alt="Fresh Okra">
             <h3>Fresh Okra</h3>
             <p class="price">$1.50/kg</p>
-            <p class="description">Fresh okra.</p>
+            <p class="description">
+                Fresh okra.
+            </p>
         </div>
 
     </div>
 
-    <nav>
-    <a href="home.html">Home</a>
-    <a href="product.html">Products</a>
-     <a href="cart.html">Cart 🛒</a>
-</nav>
-
-
-
-        
-
 </div>
-{%endblock%}
 
-</body>
-</html>
+{% endblock %}

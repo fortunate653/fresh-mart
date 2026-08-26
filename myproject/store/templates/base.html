@@ -1,35 +1,58 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshMart Online Store</title>
-    {% load static %}
+
+    <title>FreshMart</title>
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
 
-    <header>
-        <h1>FreshMart Online Store</h1>
-        <p>Fresh Meat & Vegetables at Affordable Prices</p>
+    <header class="navbar">
 
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="product.html">Products</a>
-            <a href="cart.html">Cart</a>
+        <div class="navbar-logo">
+            <h1>FreshMart</h1>
+           
+        </div>
+
+        <nav class="nav-menu">
+
+            <a class="nav-item" href="{% url 'home' %}">
+                Home
+            </a>
+
+            <a class="nav-item" href="{% url 'products' %}">
+                Products
+            </a>
+
+            <a class="nav-item" href="{% url 'cart' %}">
+                Cart 🛒
+            </a>
+
         </nav>
+
     </header>
 
     <main class="container">
+
         {% block content %}
         {% endblock %}
+
     </main>
 
     <footer>
-        <p>&copy; 2026 FreshMart Online Store | Fresh Meat & Vegetables</p>
+        <p>
+            &copy; 2026 FreshMart Online Store |
+            Fresh Meat & Vegetables
+        </p>
     </footer>
 
 </body>
+
 </html>
