@@ -1,9 +1,4 @@
-/* ========================================
-   FRESHMART BASE PAGE STYLES
-   ======================================== */
 
-
-/* ---------- Global Reset ---------- */
 
 * {
     margin: 0;
@@ -11,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-/* ---------- Body ---------- */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,9 +15,6 @@ body {
 }
 
 
-/* ========================================
-   NAVBAR
-   ======================================== */
 
 .navbar {
     background-color: #2E8B57;
@@ -40,7 +30,6 @@ body {
 }
 
 
-/* ---------- Logo / Store Name ---------- */
 
 .navbar-logo h1 {
     font-size: 28px;
@@ -53,9 +42,6 @@ body {
 }
 
 
-/* ========================================
-   NAVIGATION MENU
-   ======================================== */
 
 .nav-menu {
     display: flex;
@@ -64,7 +50,7 @@ body {
 }
 
 
-/* ---------- Navigation Items ---------- */
+
 
 .nav-item {
     color: white;
@@ -81,7 +67,7 @@ body {
 }
 
 
-/* ---------- Navigation Hover ---------- */
+
 
 .nav-item:hover {
     background-color: #1f6b43;
@@ -89,16 +75,12 @@ body {
 }
 
 
-/* ---------- Active/Clicked Navigation ---------- */
 
 .nav-item:active {
     transform: scale(0.97);
 }
 
 
-/* ========================================
-   MAIN CONTENT
-   ======================================== */
 
 .container {
     width: 90%;
@@ -110,9 +92,7 @@ body {
 }
 
 
-/* ========================================
-   HEADINGS
-   ======================================== */
+
 
 h1,
 h2,
@@ -121,16 +101,11 @@ h3 {
 }
 
 
-/* Main page headings */
-
 h2 {
     color: #2E8B57;
 }
 
 
-/* ========================================
-   FOOTER
-   ======================================== */
 
 footer {
     background-color: #222;
@@ -145,7 +120,7 @@ footer {
 }
 
 
-/* Footer text */
+
 
 footer p {
     color: #ccc;
@@ -156,18 +131,13 @@ footer p {
 }
 
 
-/* ========================================
-   LINKS
-   ======================================== */
+
 
 a {
     transition: 0.3s;
 }
 
 
-/* ========================================
-   BUTTONS
-   ======================================== */
 
 button {
     background-color: #2E8B57;
@@ -193,13 +163,10 @@ button:hover {
 }
 
 
-/* ========================================
-   MOBILE RESPONSIVE DESIGN
-   ======================================== */
 
 @media (max-width: 700px) {
 
-    /* Stack the navbar vertically */
+   
 
     .navbar {
         flex-direction: column;
@@ -212,7 +179,7 @@ button:hover {
     }
 
 
-    /* Stack navigation items */
+   
 
     .nav-menu {
         flex-direction: column;
@@ -223,7 +190,7 @@ button:hover {
     }
 
 
-    /* Make navigation links easier to tap */
+  
 
     .nav-item {
         display: block;
@@ -234,14 +201,13 @@ button:hover {
     }
 
 
-    /* Reduce store name size */
 
     .navbar-logo h1 {
         font-size: 24px;
     }
 
 
-    /* Adjust main container */
+   
 
     .container {
         width: 95%;
@@ -250,7 +216,7 @@ button:hover {
     }
 
 
-    /* Smaller footer */
+   
 
     footer {
         padding: 20px 10px;
@@ -258,9 +224,6 @@ button:hover {
 }
 
 
-/* ========================================
-   SMALL MOBILE SCREENS
-   ======================================== */
 
 @media (max-width: 400px) {
 
@@ -278,14 +241,12 @@ button:hover {
         font-size: 14px;
     }
 }
-/* ========================================
-   HOME PAGE - HERO SECTION
-   ======================================== */
+
 
 .hero {
     min-height: 500px;
 
-    /* Background image with a dark green overlay */
+   
     background:
         linear-gradient(
             rgba(0, 80, 40, 0.65),
@@ -293,18 +254,19 @@ button:hover {
         ),
         url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80");
 
-    /* Make the image cover the entire hero section */
+   
     background-size: cover;
 
-    /* Keep the image centered */
+   
     background-position: center;
 
-    /* Center the hero content */
+  
+    
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* Center the text */
+   
     text-align: center;
 
     color: white;
@@ -315,14 +277,14 @@ button:hover {
 }
 
 
-/* ---------- Hero Content ---------- */
+
 
 .hero-content {
     max-width: 800px;
 }
 
 
-/* ---------- Hero Main Heading ---------- */
+
 
 .hero h1 {
     font-size: 55px;
@@ -333,7 +295,7 @@ button:hover {
 }
 
 
-/* ---------- Hero Paragraphs ---------- */
+
 
 .hero p {
     font-size: 19px;
@@ -346,9 +308,6 @@ button:hover {
 }
 
 
-/* ========================================
-   CATEGORIES SECTION
-   ======================================== */
 
 .categories {
     background-color: #eaf5ed;
@@ -363,7 +322,7 @@ button:hover {
 }
 
 
-/* ---------- Categories Heading ---------- */
+
 
 .categories h2 {
     color: #2E8B57;
@@ -374,7 +333,7 @@ button:hover {
 }
 
 
-/* ---------- Category Container ---------- */
+
 
 .category-container {
     display: flex;
@@ -389,9 +348,6 @@ button:hover {
 }
 
 
-/* ========================================
-   CATEGORY CARDS
-   ======================================== */
 
 .category {
     background-color: white;
@@ -402,7 +358,7 @@ button:hover {
 
     border-radius: 12px;
 
-    /* Adds a small shadow around each card */
+   
     box-shadow:
         0 3px 10px rgba(0, 0, 0, 0.1);
 
@@ -411,8 +367,6 @@ button:hover {
         box-shadow 0.3s;
 }
 
-
-/* ---------- Category Emoji ---------- */
 
 .category span {
     display: block;
@@ -423,7 +377,7 @@ button:hover {
 }
 
 
-/* ---------- Category Heading ---------- */
+
 
 .category h3 {
     color: #2E8B57;
@@ -434,7 +388,7 @@ button:hover {
 }
 
 
-/* ---------- Category Description ---------- */
+
 
 .category p {
     color: #666;
@@ -445,7 +399,7 @@ button:hover {
 }
 
 
-/* ---------- Category Hover Effect ---------- */
+
 
 .category:hover {
     transform: translateY(-8px);
@@ -455,9 +409,7 @@ button:hover {
 }
 
 
-/* ========================================
-   CALL TO ACTION - CTA
-   ======================================== */
+
 
 .cta {
     background-color: #2E8B57;
@@ -474,7 +426,7 @@ button:hover {
 }
 
 
-/* ---------- CTA Heading ---------- */
+
 
 .cta h2 {
     color: white;
@@ -485,7 +437,7 @@ button:hover {
 }
 
 
-/* ---------- CTA Paragraph ---------- */
+
 
 .cta p {
     color: white;
@@ -496,9 +448,7 @@ button:hover {
 }
 
 
-/* ========================================
-   CTA BUTTONS
-   ======================================== */
+
 
 .cta-button {
     display: inline-block;
@@ -523,7 +473,7 @@ button:hover {
 }
 
 
-/* ---------- CTA Button Hover ---------- */
+
 
 .cta-button:hover {
     background-color: #e8f5e8;
@@ -532,9 +482,7 @@ button:hover {
 }
 
 
-/* ========================================
-   HOME PAGE - TABLET
-   ======================================== */
+
 
 @media (max-width: 800px) {
 
@@ -561,9 +509,7 @@ button:hover {
 }
 
 
-/* ========================================
-   HOME PAGE - MOBILE
-   ======================================== */
+
 
 @media (max-width: 600px) {
 
@@ -625,7 +571,7 @@ button:hover {
     }
 
 
-    /* Make buttons full width on small screens */
+    
 
     .cta-button {
         display: block;
@@ -637,14 +583,6 @@ button:hover {
         margin: 10px auto;
     }
 }
-/* ========================================
-   PRODUCTS PAGE
-   ======================================== */
-
-
-/* ----------------------------------------
-   PRODUCTS CONTAINER
-   ---------------------------------------- */
 
 .container {
     width: 90%;
@@ -653,9 +591,7 @@ button:hover {
 }
 
 
-/* ----------------------------------------
-   PRODUCTS PAGE HEADING
-   ---------------------------------------- */
+
 
 .container > h2 {
     text-align: center;
@@ -665,85 +601,73 @@ button:hover {
 }
 
 
-/* ========================================
-   PRODUCTS GRID
-   ======================================== */
+
 
 .products {
     display: flex;
 
-    /* Center all product cards */
+    
     justify-content: center;
 
-    /* Space between cards */
+    
     gap: 25px;
 
-    /* Allow cards to move to the next row */
+
     flex-wrap: wrap;
 }
 
 
-/* ========================================
-   PRODUCT CARD
-   ======================================== */
+
 
 .product {
     background-color: white;
 
     width: 250px;
 
-    /* Rounded corners */
+    
     border-radius: 10px;
 
-    /* Prevent image from leaving the rounded corners */
+    
     overflow: hidden;
 
-    /* Card shadow */
+    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
-    /* Center the text */
+
     text-align: center;
 
-    /* Smooth hover animation */
+
     transition:
         transform 0.3s,
         box-shadow 0.3s;
 }
 
 
-/* ----------------------------------------
-   PRODUCT CARD HOVER EFFECT
-   ---------------------------------------- */
+
 
 .product:hover {
-    /* Move the card slightly upward */
+    
     transform: translateY(-8px);
 
-    /* Increase the shadow when hovering */
+    
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-/* ========================================
-   PRODUCT IMAGE
-   ======================================== */
 
 .product img {
     width: 100%;
 
     height: 180px;
 
-    /* Keep images proportional while filling
-       the image area */
+
     object-fit: cover;
 
     display: block;
 }
 
 
-/* ========================================
-   PRODUCT NAME
-   ======================================== */
+
 
 .product h3 {
     color: #2E8B57;
@@ -754,9 +678,6 @@ button:hover {
 }
 
 
-/* ========================================
-   PRODUCT PRICE
-   ======================================== */
 
 .product .price {
     color: #e53935;
@@ -769,9 +690,6 @@ button:hover {
 }
 
 
-/* ========================================
-   PRODUCT DESCRIPTION
-   ======================================== */
 
 .product .description {
     color: #666;
@@ -786,9 +704,6 @@ button:hover {
 }
 
 
-/* ========================================
-   PRODUCT PAGE - TABLET
-   ======================================== */
 
 @media (max-width: 900px) {
 
@@ -808,9 +723,6 @@ button:hover {
 }
 
 
-/* ========================================
-   PRODUCT PAGE - MOBILE
-   ======================================== */
 
 @media (max-width: 600px) {
 
@@ -850,9 +762,7 @@ button:hover {
 }
 
 
-/* ========================================
-   SMALL MOBILE SCREENS
-   ======================================== */
+
 
 @media (max-width: 400px) {
 
@@ -875,14 +785,7 @@ button:hover {
         font-size: 18px;
     }
 }
-/* ========================================
-   SHOPPING CART PAGE
-   ======================================== */
 
-
-/* ----------------------------------------
-   CART PAGE MAIN HEADING
-   ---------------------------------------- */
 
 .container > h1 {
     text-align: center;
@@ -895,9 +798,7 @@ button:hover {
 }
 
 
-/* ========================================
-   CART SUMMARY
-   ======================================== */
+
 
 .cart-summary {
     background-color: white;
@@ -914,8 +815,6 @@ button:hover {
 }
 
 
-/* ---------- Cart Summary Heading ---------- */
-
 .cart-summary h2 {
     text-align: center;
 
@@ -924,10 +823,6 @@ button:hover {
     margin-bottom: 25px;
 }
 
-
-/* ========================================
-   CART ITEMS LIST
-   ======================================== */
 
 .cart-summary ul {
     list-style: none;
@@ -938,7 +833,7 @@ button:hover {
 }
 
 
-/* ---------- Individual Cart Item ---------- */
+
 
 .cart-summary li {
     display: flex;
@@ -955,14 +850,13 @@ button:hover {
 }
 
 
-/* ---------- Last Cart Item ---------- */
+
 
 .cart-summary li:last-child {
     border-bottom: none;
 }
 
 
-/* ---------- Product Name ---------- */
 
 .cart-summary li span:first-child {
     font-weight: bold;
@@ -971,7 +865,7 @@ button:hover {
 }
 
 
-/* ---------- Product Price ---------- */
+
 
 .cart-summary li span:last-child {
     color: #2E8B57;
@@ -980,9 +874,7 @@ button:hover {
 }
 
 
-/* ========================================
-   CART TOTAL
-   ======================================== */
+
 
 .total {
     text-align: right;
@@ -1001,9 +893,7 @@ button:hover {
 }
 
 
-/* ========================================
-   HORIZONTAL LINE
-   ======================================== */
+
 
 hr {
     border: none;
@@ -1014,9 +904,7 @@ hr {
 }
 
 
-/* ========================================
-   CHECKOUT FORM
-   ======================================== */
+
 
 form {
     background-color: white;
@@ -1033,7 +921,7 @@ form {
 }
 
 
-/* ---------- Checkout Heading ---------- */
+
 
 form > h2 {
     color: #2E8B57;
@@ -1044,19 +932,14 @@ form > h2 {
 }
 
 
-/* ---------- Payment Heading ---------- */
+
 
 form h2 {
     margin-top: 30px;
 }
 
 
-/* ========================================
-   CUSTOMER INFORMATION
-   ======================================== */
 
-
-/* ---------- Labels ---------- */
 
 form label[for="name"],
 form label[for="email"],
@@ -1072,8 +955,6 @@ form label[for="address"] {
     margin-top: 18px;
 }
 
-
-/* ---------- Text Inputs ---------- */
 
 form input[type="text"],
 form input[type="email"],
@@ -1096,7 +977,7 @@ form textarea {
 }
 
 
-/* ---------- Textarea ---------- */
+
 
 form textarea {
     resize: vertical;
@@ -1105,7 +986,7 @@ form textarea {
 }
 
 
-/* ---------- Input Focus ---------- */
+
 
 form input[type="text"]:focus,
 form input[type="email"]:focus,
@@ -1114,9 +995,7 @@ form textarea:focus {
 }
 
 
-/* ========================================
-   PAYMENT SECTION
-   ======================================== */
+
 
 form > p {
     color: #666;
@@ -1125,15 +1004,10 @@ form > p {
 }
 
 
-/* ========================================
-   PAYMENT METHOD CARDS
-   ======================================== */
 
 
-/*
-   The payment labels contain the radio button
-   and the payment information.
-*/
+
+
 
 form label:not([for]) {
     display: block;
@@ -1144,14 +1018,14 @@ form label:not([for]) {
 }
 
 
-/* ---------- Hide the Radio Button ---------- */
+
 
 form label:not([for]) input[type="radio"] {
     margin-right: 8px;
 }
 
 
-/* ---------- Payment Card Content ---------- */
+
 
 form label:not([for]) > div {
     background-color: #f8fbf8;
@@ -1171,7 +1045,7 @@ form label:not([for]) > div {
 }
 
 
-/* ---------- Payment Card Hover ---------- */
+
 
 form label:not([for]) > div:hover {
     border-color: #2E8B57;
@@ -1182,9 +1056,6 @@ form label:not([for]) > div:hover {
 }
 
 
-/* ========================================
-   PAYMENT IMAGES
-   ======================================== */
 
 form label:not([for]) img {
     width: 90px;
@@ -1199,9 +1070,6 @@ form label:not([for]) img {
 }
 
 
-/* ========================================
-   PAYMENT CARD TEXT
-   ======================================== */
 
 form label:not([for]) h3 {
     color: #2E8B57;
@@ -1223,7 +1091,7 @@ form label:not([for]) p {
 }
 
 
-/* ---------- Select Text ---------- */
+
 
 form label:not([for]) span {
     display: inline-block;
@@ -1242,9 +1110,7 @@ form label:not([for]) span {
 }
 
 
-/* ========================================
-   SUBMIT BUTTON
-   ======================================== */
+
 
 form button[type="submit"] {
     display: block;
@@ -1275,7 +1141,7 @@ form button[type="submit"] {
 }
 
 
-/* ---------- Submit Button Hover ---------- */
+
 
 form button[type="submit"]:hover {
     background-color: #1f6b43;
@@ -1284,13 +1150,10 @@ form button[type="submit"]:hover {
 }
 
 
-/* ========================================
-   MOBILE CART PAGE
-   ======================================== */
 
 @media (max-width: 600px) {
 
-    /* Cart summary becomes almost full width */
+    
 
     .cart-summary {
         width: 95%;
@@ -1299,28 +1162,28 @@ form button[type="submit"]:hover {
     }
 
 
-    /* Smaller cart heading */
+    
 
     .container > h1 {
         font-size: 30px;
     }
 
 
-    /* Stack cart item information */
+    
 
     .cart-summary li {
         font-size: 15px;
     }
 
 
-    /* Smaller total */
+    
 
     .total {
         font-size: 21px;
     }
 
 
-    /* Checkout form */
+
 
     form {
         width: 95%;
@@ -1329,21 +1192,21 @@ form button[type="submit"]:hover {
     }
 
 
-    /* Smaller checkout heading */
+    
 
     form > h2 {
         font-size: 24px;
     }
 
 
-    /* Payment cards */
+    
 
     form label:not([for]) > div {
         padding: 15px;
     }
 
 
-    /* Payment images */
+    
 
     form label:not([for]) img {
         width: 75px;
@@ -1353,9 +1216,6 @@ form button[type="submit"]:hover {
 }
 
 
-/* ========================================
-   VERY SMALL MOBILE SCREENS
-   ======================================== */
 
 @media (max-width: 400px) {
 
